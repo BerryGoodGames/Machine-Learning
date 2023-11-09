@@ -1,6 +1,6 @@
-﻿namespace Supervised_Learning.Functions;
+﻿namespace SupervisedLearning.Functions;
 
-public class Sigmoid
+public class Sigmoid: IFunction
 {
-    
+    public double Get(double x) => 1 / (1 + Math.Exp(-x));
 }
